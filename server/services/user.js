@@ -95,6 +95,7 @@ const userDetails = async (req, res) => {
                     complated.push(item);
                 }
             });
+            // console.log(getDetails);
             return res
             .status(200)
             .json(("success",tasks= [{ yetToStart },{ inProgress }, { complated } ]));
